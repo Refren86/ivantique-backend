@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "furnitures",
+  "info": {
+    "singularName": "furniture",
+    "pluralName": "furnitures",
+    "displayName": "Furniture"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "oldPrice": {
+      "type": "decimal"
+    },
+    "newPrice": {
+      "type": "decimal"
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "furnitures"
+    },
+    "depth": {
+      "type": "decimal"
+    },
+    "width": {
+      "type": "decimal"
+    },
+    "height": {
+      "type": "decimal"
+    },
+    "style": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::style.style"
+    },
+    "materials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::material.material"
+    },
+    "century": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::century.century"
+    }
+  }
+}

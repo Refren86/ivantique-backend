@@ -26,6 +26,12 @@
       "type": "media",
       "multiple": false,
       "required": true
+    },
+    "furnitures": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::furniture.furniture",
+      "mappedBy": "category"
     }
   }
 }

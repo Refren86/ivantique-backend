@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "centuries",
+  "info": {
+    "singularName": "century",
+    "pluralName": "centuries",
+    "displayName": "Century"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    }
+  }
+}

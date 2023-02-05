@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_furniture_furnitures",
+  "info": {
+    "displayName": "Furnitures"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "furnitureId": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

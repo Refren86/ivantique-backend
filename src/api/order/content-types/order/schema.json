@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "client": {
+      "type": "string"
+    },
+    "overallPrice": {
+      "type": "decimal"
+    },
+    "clientPhone": {
+      "type": "string"
+    },
+    "furnitures": {
+      "type": "component",
+      "repeatable": true,
+      "component": "furniture.furnitures"
+    }
+  }
+}
